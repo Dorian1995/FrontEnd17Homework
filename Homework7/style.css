@@ -1,0 +1,178 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.card-contact{
+    border:1px solid black;
+    width:50%;
+    margin-left: 400px;
+    margin-top: 40px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+#first-name, #last-name{
+    margin-top:20px;
+    margin-bottom: 20px;
+    margin-left: 50px;
+    padding:5px;
+    display: flex;
+    width:400px;
+}
+.gender{
+    margin-left:50px;
+}
+.male, .female{
+    margin-left: 70px;
+
+}
+textarea{
+    margin-left: 50px;
+    margin-top: 20px;
+    width:400px;
+}
+
+#submit-button{
+margin-left: 380px;
+margin-top: 20px;
+border-radius:5px;
+height:40px;
+width:70px;
+color:white;
+background-color: rgb(26, 165, 211);
+}
+img{
+    float:right;
+    margin-right:40px;
+    margin-top:20px;
+}
+#success-message{
+    margin-left:50px;
+    border:1px solid lightgray;
+    width:400px;
+    height:30px;
+    background-color: rgb(139, 206, 139);
+    text-align:center;
+    font-size: 14px;
+    visibility: hidden;
+}
+
+.invalid1{
+    border: 1px solid red;
+    color:red;
+}
+.invalid2{
+    color:red;
+    font-size: 14px;
+}
+.valid{
+    border: 1px solid green;
+    color: black;
+}
+
+.fas{
+    padding: 5px;
+}
+.far{
+    padding:5px;
+}
+#banner{
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+#close-banner{
+    background-color: rgb(139, 206, 139);
+}
+
+
+/* mobile responsive */
+
+
+@media  screen and (max-width:499px){
+    .card-contact{
+        position: relative;
+        width:max-content;
+        border:0.1rem solid black;
+    }
+    img{
+        position: relative;
+        left:0.01rem;
+        height:auto;
+
+    }
+    #first-name, #last-name{
+        width:30vw;
+        margin-left: 3rem;
+        border: 0.1rem solid black;
+    }
+    textarea{
+        position: relative;
+        width:fit-content;
+        right:3rem;
+        height: auto;
+        border: 0.1rem solid black;
+    }
+    #submit-button{
+    margin-left: 3rem;
+    }
+    #success-message{
+        width:100vw;
+        height: auto;
+        text-align: start;
+    }
+    
+    
+}
+
+
+
+@media screen and (max-width:500px){
+    .card-contact{
+        height:auto;
+        width:60vw;
+    }
+    img{
+        width:max-content;
+        margin-right:auto;
+    }
+    #first-name, #last-name{
+        width:30vw;
+        margin-left: 3rem;
+    }
+    textarea{
+        width:max-content;
+        margin-left: 2.5rem;
+    }
+    #submit-button{
+    margin-left: 3rem;
+    }
+    
+}
+/* tablet responsive */
+
+@media  screen and (min-width:501px) and (max-width:1000px){
+    .card-contact{
+        height:auto;
+        width:60vw;
+    }
+    #first-name, #last-name{
+        width:30vw;
+        margin-left: 3rem;
+        border: 0.1rem solid black;
+    }
+    textarea{
+        width:max-content;
+        margin-left:3rem;
+        border: 0.1rem solid black;
+    }
+    #submit-button{
+    margin-left: 3rem;
+    }
+    
+    
+}

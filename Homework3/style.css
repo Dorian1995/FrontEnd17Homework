@@ -1,0 +1,83 @@
+*{
+    box-sizing:border-box;
+}
+.container{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+    padding:20px;
+
+}
+.shopping{
+    width:350px;
+    height:800px;
+    margin:auto;
+}
+
+.picture{
+    width:350px;
+    margin:auto;
+}
+.description{
+    font-size: 18px;
+    font-weight:bolder;
+    text-align:center;
+    font-family: Mulish, sans-serif;
+}
+.unicode{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content:space-evenly;
+    width: 250px;
+    height:25px;
+    padding-left:100px;
+}
+.star{
+    color:orange;
+    font-size: 25px; 
+ 
+}
+.heart{
+    color:gainsboro;
+    font-size: 20px;
+}
+.red-heart{
+    color:red;
+    font-size:20px;
+}
+.content{
+    text-align: center;
+    padding-left:5px;
+    font-weight: bold;
+    color:gray;
+    font-family: Mulish, sans-serif;
+}
+.buttons{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 230px;
+    margin:auto;
+    padding-top: 15px;
+}
+.cart{
+    background-color: black;
+    color:white;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+    width:90px;
+    height:40px;   
+}
+.view{
+    background-color:white;
+    color:black;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+    width:90px;
+    height:40px;   
+}

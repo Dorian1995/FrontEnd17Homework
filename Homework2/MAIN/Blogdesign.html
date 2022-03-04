@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andreea's Blog</title>
+</head>
+
+<body>
+    <nav class="topNav"><a href="#blog">Andreea's Blog</a>
+    <nav class="topnav-right">
+            <a href="Blogdesign.html">HOME</a>
+            <a href="about.html">ABOUT</a>
+            <a href="archive.html">ARCHIVE</a>
+            <input type="text" placeholder="Search..">
+            <button class="searchButton"><i class="fas fa-search"></i></button>
+        </nav>
+    </nav>
+        <div class="content">
+            <h1>Rules for Autocomplete</h1>
+            <p> <i>Posted on March 19, 2019 </i></p>
+            <p>Autocompleting text with known value seems like an easy problem to solve, but so many UIs get it
+                wrong.I
+                see
+                this
+                frequently enough that, rather than complain about them individually, though I'd just write down the
+                set
+                of
+                rules they often break.</p>
+            <p>There may be cases where some of the rules aren't the best thing to do, but there should be a good
+                reason
+                for
+                breaking one of these rules (for example, some of these rules don't apply if a field if a field must
+                be
+                filled
+                with a value from a fixed set, like the list of US states). Following these rules should always
+                result
+                in a
+                very
+                least a sane experience:</p>
+            <ul>
+                <li>Exact matches always come first. If the user types in an option exactly, other options must
+                    always
+                    go
+                    below
+                    the one matching what they typed.</li>
+                <li>Besides exact matches, prefix matches come first. If I type "Fr" I want "Fresno" not "San
+                    Francisco".
+                </li>
+                <li>After prefix matches, it can fall back to substring matches. Starting with substring matches
+                    would
+                    almost
+                    always be the wrong thing to do since users start typing words at the beginning not somewhere in
+                    the
+                    middle.
+                </li>
+                <li>If there are no substring matches, it can optionally fall back to subsequence matching.This is
+                    only
+                    useful
+                    in some cases.</li>
+                <li>If there are no subsequence /substring matches, it can optionally fall back to approximate
+                    matches.
+                    This
+                    is
+                    rarely necessary to provide.</li>
+                <li>Matches should be sorted alphabetically.</li>
+                <li>When one option is the prefix of another, put the <i> shortest one first.</i></li>
+                <li>The matching should probably be case insensitive unless there are two options that differ only
+                    by
+                    case.In
+                    that case(pun intended), prefer the one that more closely matches the user's input.</li>
+                <li>The action to make use of the selection(e.g. to search the term) must be a differnt key than the
+                    action
+                    to
+                    accept the fisrt suggestion <i>unless</i> you have to do something first to start using
+                    autocomplete
+                    suggestions (e.g. hit the down arrow). The user should never have to take extra steps to
+                    <i>not</i>
+                    use
+                    autocomplete.
+                </li>
+            </ul>
+        </div>
+</body>
+
+</html>

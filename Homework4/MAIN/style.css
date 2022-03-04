@@ -1,0 +1,110 @@
+*{
+    margin:0;
+    padding:0;
+}
+*{
+    box-sizing: border-box;
+}
+
+.contact{
+    border: 1px solid lightgray;
+    background-color: rgb(242, 242, 242);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    display:flex;
+    align-items:center;
+    padding:50px;
+    margin:20px;
+    gap:10px;
+}
+.h1{
+    padding-left: 200px;
+    font-size:50px;
+}
+.h2{
+    color:rgb(168, 161, 161);
+    font-weight: lighter;
+    font-size:30px;
+    padding-top:15px;
+}
+.container{
+    display:flex;
+    width:720px;
+    height:300px;
+    border:2px solid rgb(242, 242, 242);
+    background-color:rgb(242, 242, 242);
+    font-weight:bold;
+    margin-left:400px;
+    margin-top:30px;
+    padding-left: 20px;
+}
+.firstColumn{
+    width:350px;
+}
+.secondColumn{
+    width:340px;
+}
+.secondColumn label{
+    margin-left:28px;
+}
+input[type=text]{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    width:100%;
+    padding: 10px;
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 8px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+textarea{
+    width:300px;
+    height:210px;
+    margin-left:30px;
+    margin-top:10px;
+    border-radius:4px;
+    padding:10px;
+    border:1px solid rgb(204, 204, 204);
+}
+
+input[type=button]{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight:bold;
+    width:115px;
+    margin-top:5px;
+    margin-left:210px;
+    border-radius:2px;
+    border:1px solid rgb(13, 145, 217);
+    background-color: rgb(13, 145, 217);
+    color:white;
+    padding:5px;
+}
+input[type=button]:hover{
+    background-color:rgb( 69, 74, 160);
+    cursor: pointer;
+
+}
+.social{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding-left:600px;
+    padding-right:600px;
+    padding-bottom: 100px;
+
+}
+.text{
+    display:flex;
+    justify-content:center;
+    border-bottom:1px solid rgb(204, 204, 204);
+    padding-top:20px;
+}
+.links a{
+    text-decoration: none;
+    color:rgb(128, 128, 243);
+    font-size:14px;
+}
+.links{
+    display: flex;
+    justify-content:space-between;
+    gap:40px;
+
+}
